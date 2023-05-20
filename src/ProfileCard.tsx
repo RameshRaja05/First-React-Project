@@ -1,6 +1,13 @@
+import React from "react"
 
-/* eslint-disable react/prop-types */
-function ProfileCard({title,handle,image,description}){
+interface ProfileProps{
+  title:string;
+  handle:string;
+  image:string;
+  description:string;
+}
+
+const ProfileCard:React.FC<ProfileProps>=({title,handle,image,description})=>{
     return( 
       <div className="card" style={{minHeight:"100%"}}>
       <div className="card-image">

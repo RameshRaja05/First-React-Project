@@ -1,3 +1,4 @@
+import React from "react"
 import ProfileCard from "./ProfileCard"
 import AlexaImage from "./images/alexa.png"
 import CortanaImage from "./images/cortana.png"
@@ -5,7 +6,7 @@ import SiriImage from "./images/siri.png"
 import "bulma/css/bulma.css"
 import Button from "./Button"
 
-function App(){
+const App:React.FC=()=>{
 
     return (
         <div>

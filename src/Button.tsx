@@ -1,7 +1,8 @@
-import { useState } from "react"
-// eslint-disable-next-line react/prop-types
-function Button({color}){
-    const[count,SetCount]=useState(0)
+import React,{ useState } from "react"
+
+
+const Button:React.FC<{color:string}>=({color})=>{
+    const[count,SetCount]=useState<number>(0)
     let className="button"
     if(color==='red'){
         className+=" is-danger"
